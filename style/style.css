@@ -63,13 +63,15 @@ header nav a:hover:before{
 
 .div-img{
     display: none;
-    position: relative;
-    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem;
 }
 
 .div-img img{
-    width: 800px;
-    height: 500px;
+    width: 1000px;
+    height: 600px;
     object-fit: contain;
 }
 
@@ -107,10 +109,5 @@ header nav a:hover:before{
     color: #f60b0b;
     font-size: 15px;
     text-align: center;
-}
-
-#second{
-    display: flex;
-    gap: 1rem;
     margin-left: 2rem;
 }
