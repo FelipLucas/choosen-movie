@@ -66,6 +66,7 @@ header nav a:hover:before{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 1rem;
     margin: 2rem;
 }
 
@@ -93,6 +94,7 @@ header nav a:hover:before{
 }
 
 #iage{
+    width: 100px;
     text-align: center;
     color: #ffffff;
     background-color: #000000;

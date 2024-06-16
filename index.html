@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <script src="script/index.js" defer></script>
     <title>Movies</title>
 </head>
 <body>
@@ -24,29 +23,29 @@
         </svg> Choose Your Movie</p>
     </div>
 
-    <form action="#" class="form">
+    <form action="#" class="form" method="get">
         <div class="div-ctaegories">
             <label for="iterror">Horror</label>
             <input type="radio" name="terror" id="iterror">
         </div>
         <div class="div-ctaegories">
-            <label for="iterror">Drama</label>
-            <input type="radio" name="terror" id="iterror">
+            <label for="idrama">Drama</label>
+            <input type="radio" name="terror" id="idrama" required>
         </div>
         <div class="div-ctaegories">
-            <label for="iterror">Adventure</label>
-            <input type="radio" name="terror" id="iterror">
+            <label for="iadventure">Adventure</label>
+            <input type="radio" name="terror" id="iadventure" required>
         </div>
         <div class="div-ctaegories">
-            <p>Your age:</p>
-            <input type="number" name="age" id="iage" max="100" placeholder="text your age">
-            <label for="iager"></label>
+            <label for="iage">Your Age:</label>
+            <input type="text" name="age" id="iage" placeholder="text your age" required autocomplete="off">
         </div>
-            <input type="submit" name="submit" id="submit" value="Send >"  onclick="sendForm()">
+            <input type="submit" name="submit" id="submit" value="Send >"  onclick="verificar()">
     </form>
     <div class="div-img">
-        <img src="" alt="" class="img">
+        <img src="" alt="">
         <p class="nome-filme"></p>
     </div>
+    <script src="script/index.js"></script>
 </body>
 </html>

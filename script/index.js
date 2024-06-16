@@ -1,19 +1,24 @@
-const inputs = document.getElementsByName('terror');
-const inputAge = document.getElementById('iage');
-const inputSend = document.querySelector('#second');
-const form = document.querySelector('.form');
-const divImages = document.querySelector('.div-img');
-const images = document.querySelector('.img');
-const nomeFilme = document.querySelector('.nome-filme');
+function verificar(){
+    let inputAge = document.getElementById('iage');
+    let inputs = document.getElementsByName('terror');
+    let nomeFilme = document.querySelector('.nome-filme');
+    let divImages = document.querySelector('.div-img');
+    let images = document.querySelector('.div-img img');
 
-function sendForm(){
-    if(inputAge.value.length === 0){
-        window.alert('[ERROR] select options');
-    } 
-    else if(inputs[0].checked){
+    if(inputAge.value < 18){
+        window.alert('[ERROR] text other age');
+    }
+    if(inputs[0].checked && inputAge.value >= 18){
         divImages.style.display = 'flex';
         images.src = "https://i0.wp.com/cinestera.com.br/wp-content/uploads/2022/10/Pearl-filme.jpeg?resize=768%2C432&ssl=1";
         nomeFilme.innerHTML = 'Pearl';
-    } 
-
+    } else if(inputs[1].checked && inputAge.value >= 18){
+        divImages.style.display = 'flex';
+        images.src = "https://m.media-amazon.com/images/I/51tOG0zzUgL._AC_.jpg";
+        nomeFilme.innerHTML = 'Titanic';
+    } else if(inputs[2].checked && inputAge.value >= 18){
+        divImages.style.display = 'flex';
+        images.src = "https://media.themoviedb.org/t/p/w220_and_h330_face/1VLcIs7GwAIdRGw8e7hAyKLttvg.jpg";
+        nomeFilme.innerHTML = 'Jumanji';
+    }
 }
