@@ -12,7 +12,11 @@ function verificar(){
         divImages.style.display = 'flex';
         images.src = "https://ofuxico.com.br/wp-content/uploads/2022/06/a-fera-do-mar.jpg";
         nomeFilme.innerHTML = 'A Fera do Mar';
-    }else if(inputs[2].checked && inputAge.value >= 13){
+    }else if(inputs[2].checked && inputAge.value >= 13 && inputAge.value <= 16){
+        divImages.style.display = 'flex';
+        images.src = "https://veja.abril.com.br/wp-content/uploads/2016/11/cartaz_filme1.jpg?quality=70&strip=all";
+        nomeFilme.innerHTML = 'Tin Tin';
+    } else if(inputs[2].checked && inputAge.value >= 17){
         divImages.style.display = 'flex';
         images.src = "https://media.themoviedb.org/t/p/w220_and_h330_face/1VLcIs7GwAIdRGw8e7hAyKLttvg.jpg";
         nomeFilme.innerHTML = 'Jumanji';
